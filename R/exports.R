@@ -145,29 +145,43 @@ read_sysfile <- function(..., package = "utter"){
 }
 
 #' List to Data Frame 
-#' @name list_to_dataframe
-#' @description list_to_dataframe
+#' @name list_to_df
+#' @description list_to_df
 #' @param string
 #' @return string
 #' @export
 #' @examples \dontrun{
 #' }
-list_to_dataframe <- function(l){
+list_to_df <- function(l){
   plyr::ldply(l, data.frame)
 }
 
 #' List to Data Frame 
-#' @name list_to_dataframe2
-#' @description list_to_dataframe2
+#' @name list_to_df2
+#' @description list_to_df2
 #' @param string
 #' @return string
 #' @export
 #' @examples \dontrun{
 #' }
-list_to_dataframe2 <- function(l){
+list_to_df2 <- function(l){
   llen <- unlist(lapply(l, length))
   l <- l[llen ==1]
   as.data.frame(l)
+}
+
+
+#' naToEmpty
+#' @name naToEmpty
+#' @description naToEmpty
+#' @param string
+#' @return string
+#' @export
+#' @examples \dontrun{
+#' }
+naToEmpty <- function(df, empty = c(" ")){
+  df[is.na(df)] <- ""
+  df[df %in% empty] <- ""
 }
 
 #' Copy directories recursively, creating a new directory if not already there
