@@ -2,7 +2,8 @@
 % Please edit documentation in R/exports.R
 \name{is.empty}
 \alias{is.empty}
-\title{is.empty}
+\title{Sets up directory structure for a new Borges site
+is.empty}
 \usage{
 is.empty(x)
 }

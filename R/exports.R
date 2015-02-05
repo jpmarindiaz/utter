@@ -1,5 +1,5 @@
 #' %||%
-#' @name this if null 
+#' @name `%||%`
 #' @description this or that: %||% 
 #' @param x any
 #' @param y any
@@ -19,7 +19,7 @@
 }
 
 
-
+#' Sets up directory structure for a new Borges site
 #' is.empty
 #' @name is.empty
 #' @description is.empty
