@@ -1,12 +1,11 @@
 #' %||%
-#' @name `%||%`
+# @name this-if-null
+#' @rdname this-if-null
 #' @description this or that: %||% 
 #' @param x any
 #' @param y any
 #' @return y if x is undefined
 #' @export
-#' @examples \dontrun{
-#' }
 `%||%` <- function (x, y) 
 {
   if (is.empty(x)) 
