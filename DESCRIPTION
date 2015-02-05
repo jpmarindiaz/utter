@@ -1,0 +1,11 @@
+Package: utter
+Type: Package
+Title: R jp's utils
+Version: 0.0.0
+Date: 2015-01-20
+Author: Juan Pablo Marin Diaz
+Maintainer: Juan Pablo Marin Diaz <jpmarindiaz@gmail.com>
+Description: Utils for my own R dev workflow.
+License: GPL3
+Depends:
+    R (>= 3.0.0)
