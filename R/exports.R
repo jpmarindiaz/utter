@@ -182,6 +182,7 @@ list_to_df2 <- function(l){
 naToEmpty <- function(df, empty = c(" ")){
   df[is.na(df)] <- ""
   df[df %in% empty] <- ""
+  df
 }
 
 #' Copy directories recursively, creating a new directory if not already there
