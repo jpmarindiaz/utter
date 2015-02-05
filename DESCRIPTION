@@ -8,4 +8,4 @@ Maintainer: Juan Pablo Marin Diaz <jpmarindiaz@gmail.com>
 Description: Utils for my own R dev workflow.
 License: GPL3
 Depends:
-    R (>= 3.0.0)
+    R (>= 3.0.0), plyr

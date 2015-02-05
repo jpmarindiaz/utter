@@ -153,6 +153,18 @@ read_sysfile <- function(..., package = "utter"){
 #' @examples \dontrun{
 #' }
 list_to_dataframe <- function(l){
+  plyr::ldply(l, data.frame)
+}
+
+#' List to Data Frame 
+#' @name list_to_dataframe2
+#' @description list_to_dataframe2
+#' @param string
+#' @return string
+#' @export
+#' @examples \dontrun{
+#' }
+list_to_dataframe2 <- function(l){
   llen <- unlist(lapply(l, length))
   l <- l[llen ==1]
   as.data.frame(l)
