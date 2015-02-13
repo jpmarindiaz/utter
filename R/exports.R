@@ -45,7 +45,7 @@ clean_ws <- function(keep = c()){
 #' }
 is.empty <- function (x) 
 {
-  if(props == "") return(TRUE)
+  if(x == "") return(TRUE)
   !as.logical(length(x))
 }
 
