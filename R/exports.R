@@ -45,6 +45,12 @@ clean_ws <- function(keep = c()){
 #' }
 is.empty <- function (x) 
 {
+  if("data.frame" %in% class(x)){
+    out <- apply(x,1,function(r){
+      any(unlist(lapply(r, is.empty)))
+    })
+    return(out)
+  }
   if(x == "") return(TRUE)
   !as.logical(length(x))
 }
